@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/titles.css">
+    <script src="../final_project/scripts/titles.js" defer></script>
+    <title>Music-Titles</title>
+</head>
+<body>
+    <nav>
+        <img src="./images/music_image2.png" alt="logo" id="logo">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+    </nav>
+
+    <main>
+        <!-- User information -->
+        
+        <h1>Welcome to the Music Titles</h1>
+        <h3>Please provide your information down below !</h3><br>
+
+        <label for="name1"></label>
+        <input type="text" placeholder="Enter your First Name" id="name1">
+
+        <label for="name2"></label>
+        <input type="text" placeholder="Enter your Last Name" id="name2" name="text">
+
+        <select name="country" id="country">
+            <option value="DR Congo">DR Congo</option>
+            <option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="Chine">Chine</option>
+            <option value="Japan">Japan</option>
+            <option value="India">India</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Zambia">Zambia</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Brazil">Brazil</option>
+        </select> <br><br>
+
+        <!-- Artiste Information -->
+
+
+        <label for="name3"></label>
+        <input type="text" placeholder="The artist's name or the bande " id="name3">
+
+        <select name="country" id="art_country">
+            <option value="CD">DR Congo</option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+            <option value="CN">Chine</option>
+            <option value="JP">Japan</option>
+            <option value="IN">India</option>
+            <option value="KE">Kenya</option>
+            <option value="ZM">Zambia</option>
+            <option value="ZA">South Africa</option>
+            <option value="MX">Mexico</option>
+            <option value="BR">Brazil</option>
+            <option value="TZ">Tanzania</option>
+
+        <label for="song_number">Enter the number of songs</label>
+        <input type="number" placeholder="Enter the number of songs" id="song_number" name="song_number" max="10" min="0"> <br><br>
+
+
+        <h2 id="user_message"></h2> <br><br>
+        <div id="results">
+            <ol id="resut_item"> </0l>
+        </div>
+
+        <button id="save" disazled onclick="main()">Save Info</button> <br> <br>
+        <button id="refresh" onclick="refreshAll()">Refresh All</button><br><br><br>
+        
+
+        <img src="./images/music_image1.jpeg" alt="" srcset="" id="bottom_img"> <br> 
+
+        <button id="quit" onclick="quit()">Quit</button>
+
+        
+    </main>
+     
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
