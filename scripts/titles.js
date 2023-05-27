@@ -6,6 +6,23 @@ var messages = [
     "be Blessed"
 ]
 
+// Event listener
+
+let saveB = document.querySelector("#save");
+let refreshB = document.querySelector("#refresh");
+let quitB = document.querySelector("#quit");
+
+saveB.addEventListener("click", (e) => {
+    main();
+});
+refreshB.addEventListener("click", (e) =>{
+    refreshAll();
+});
+
+quitB.addEventListener("click", (e) =>{
+    quit();
+})
+
 // The main function calling other functtions
 function main()
 {
@@ -13,7 +30,6 @@ function main()
     let r = getUrl();
     get_music(r)
     .then(d => {
-
         let song_num = document.querySelector("#song_number").value;
 
         if(song_num <= 10){
@@ -30,6 +46,7 @@ function main()
                 console.log(song)
             }
         }
+        
     })
    
 
